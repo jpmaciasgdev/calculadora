@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+body{
+    min-height: 100vh;
+    background-color: #132e35;
+    display: grid;
+    place-items: center;
+}
+h1{
+    color: white;
+}
+
+.calculator{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5a636a;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 40%;
+    height: 500px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    
+    
+}
+
+
+.display{
+    grid-column: 1/5;
+    background-color: #0d1f23;
+    color: white;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1.5rem;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: right;
+    width: 100%;
+    height: 90px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.operators{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding: 3px;
+    margin: 2px;
+    border-radius: 1.5rem;
+}
+.clear,
+.delete,
+.operator,
+.decimal,
+.equal{
+    background-color: #2d4a53;
+    border-radius: 1.5rem;
+    outline: none;
+    border: none;
+    padding: 2px;
+    margin: 2px;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.clear:hover,
+.delete:hover,
+.operator:hover,
+.decimal:hover,
+.equal:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+    transform: scale(.95);
+    background-color: #395f6b;
+}
+
+
+.number{
+    background-color: #7b8896;
+    border: none;
+    border-radius: 1.5rem;
+    outline: none;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 2px;
+    margin: 3px;
+}
+.number:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+    transform: scale(.95);
+    background-color: #9ea7b1;
+}
